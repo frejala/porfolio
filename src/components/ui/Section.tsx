@@ -7,11 +7,11 @@ type SectionProps = {
   children: ReactNode[];
 };
 
-export const Section = ({
+export const Section: React.FC<SectionProps> = ({
   id,
   className,
   children,
-}: SectionProps) => {
+}) => {
   return (
     <section
       id={id}

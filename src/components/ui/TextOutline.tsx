@@ -7,12 +7,12 @@ type TextOutlineProps = {
   showDot?: boolean;
 };
 
-export const TextOutline = ({
+export const TextOutline: React.FC<TextOutlineProps> = ({
   children,
   className,
   breakAfterWord = 1,
   showDot = true,
-}: TextOutlineProps) => {
+}) => {
   const words = children.split(' ');
   const firstLine = words
     .slice(0, breakAfterWord)
@@ -22,7 +22,7 @@ export const TextOutline = ({
   return (
     <div
       className={cn(
-        'text-stroke-white-1 font-poppins text-5xl font-bold leading-tight text-transparent', // Add leading-tight class
+        'font-poppins text-5xl font-bold leading-tight text-transparent text-stroke-white-1', // Add leading-tight class
         className
       )}
     >
