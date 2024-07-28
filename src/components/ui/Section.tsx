@@ -15,10 +15,10 @@ export const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className={cn('mt-10 flex justify-around', className)}
+      className={cn('flex w-full', className)}
     >
-      <div className="grow basis-[0]">{children[0]}</div>
-      <div className="grow basis-[0]">{children[1]}</div>
+      <div className="flex-1">{children[0]}</div>
+      <div className="flex-1">{children[1]}</div>
     </section>
   );
 };

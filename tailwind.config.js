@@ -7,6 +7,9 @@ export default {
         'o-blue': '#49DEFF',
         'o-yellow': '#FFC100',
         'o-black': '#121214',
+        'o-gray': '#94A3B8',
+        'o-white': '#E2E8F0',
+        'custom-green': 'rgba(204, 243, 129, 0.04)',
       },
       fontFamily: {
         'space-mono': ['Space Mono', 'monospace'],
