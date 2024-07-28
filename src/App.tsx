@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header';
 import AboutMe from '@/components/sections/AboutMe';
 import RoadPath from '@/components/sections/RoadPath';
+import Projects from '@/components/sections/Projects';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <div className="flex w-full max-w-[1450px] flex-row flex-wrap gap-64">
         <AboutMe />
         <RoadPath />
+        <Projects />
       </div>
     </main>
   );

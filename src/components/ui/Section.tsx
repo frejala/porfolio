@@ -15,7 +15,10 @@ export const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className={cn('flex w-full', className)}
+      className={cn(
+        'flex w-full flex-col gap-10 px-10 lg:flex-row lg:gap-0 lg:px-0',
+        className
+      )}
     >
       <div className="flex-1">{children[0]}</div>
       <div className="flex-1">{children[1]}</div>

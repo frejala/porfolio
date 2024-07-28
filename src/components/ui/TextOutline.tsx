@@ -22,7 +22,7 @@ export const TextOutline: React.FC<TextOutlineProps> = ({
   return (
     <div
       className={cn(
-        'font-poppins text-[5.5rem] font-bold leading-tight text-transparent text-stroke-white-1',
+        'font-poppins text-6xl font-bold leading-tight text-transparent text-stroke-white-1 md:text-[5.5rem]',
         className
       )}
     >
