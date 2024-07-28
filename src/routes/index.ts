@@ -6,7 +6,7 @@ type Route = {
 const routes: Array<Route> = [
   {
     href: '/about',
-    label: 'About',
+    label: 'About Me',
   },
   {
     href: 'roadpath',

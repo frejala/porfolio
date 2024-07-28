@@ -1,6 +1,5 @@
 import Header from '@/components/layout/Header';
 import AboutMe from '@/components/sections/AboutMe';
-import { StarsBackground } from '@/components/ui/StarsBackground';
 import RoadPath from '@/components/sections/RoadPath';
 
 const App = () => {
