@@ -12,7 +12,7 @@ export const experiences: Array<Experience> = [
   {
     period: '2022 - Present',
     title: 'Full Stack Developer',
-    company: 'Centro de Desarrollo Sostenible S.A',
+    company: 'CDS S.A',
     companyLink: 'https://cds.com.py/',
     position: 'Junior Developer',
     description:

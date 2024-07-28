@@ -1,5 +1,6 @@
 import { Experience } from '@/data/experiences';
 import { SkillBubble } from '@/components/ui/SkillBubble';
+import { ArrowDiagonal } from '@/assets/icons/ArrowDiagonal';
 
 export const ExperienceItem: React.FC<Experience> = ({
   period,
@@ -20,11 +21,11 @@ export const ExperienceItem: React.FC<Experience> = ({
           {title} ·{' '}
           <a
             href={companyLink}
-            className="text-o-white"
+            className="text-o-white ml-1 inline-flex items-center"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {company}
+            {company} <ArrowDiagonal className="ml-3" />
           </a>
         </h3>
         <h4 className="mb-2 mt-2 font-space-mono text-lg text-o-blue">
