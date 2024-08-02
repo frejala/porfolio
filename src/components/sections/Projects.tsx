@@ -1,5 +1,5 @@
 import { ProjectItem } from '@/components/ui/ProjectItem';
-import { TextOutline } from '../ui/TextOutline';
+import { TextOutline } from '@/components/ui/TextOutline';
 
 const projects = [
   {

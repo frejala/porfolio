@@ -4,7 +4,7 @@ import { Section } from '@/components/ui/Section';
 const AboutMe = () => {
   return (
     <Section>
-      <TextOutline breakAfterWord={2}>About Me</TextOutline>
+      <TextOutline>About Me</TextOutline>
       <span className="max-w-lg text-center font-space-mono text-sm leading-10 tracking-wider text-white">
         Hi, I'm Fabrizio Rejala, a passionate developer
         based in Paraguay. I love creating websites with an

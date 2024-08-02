@@ -10,14 +10,17 @@ type TextOutlineProps = {
 export const TextOutline: React.FC<TextOutlineProps> = ({
   children,
   className,
-  breakAfterWord = 1,
+  breakAfterWord,
   showDot = true,
 }) => {
+  const breakWord = breakAfterWord !== undefined;
   const words = children.split(' ');
-  const firstLine = words
-    .slice(0, breakAfterWord)
-    .join(' ');
-  const secondLine = words.slice(breakAfterWord).join(' ');
+  let firstLine = children;
+  let secondLine = '';
+  if (breakWord) {
+    firstLine = words.slice(0, breakAfterWord).join(' ');
+    secondLine = words.slice(breakAfterWord).join(' ');
+  }
 
   return (
     <div
